@@ -5,7 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import { Home } from './components/Home'
 import Products from './components/Products'
-import bgImg from "./assets/background.jpg"
+import bgImg from "./assets/futuristic-symmetry-reflection-abstract-background-with-orange-blue-neon-lights.jpg"
 import './index.css';
 import ProductsTab from './components/ProductsTab'
 import Community from './components/Community'
@@ -18,14 +18,14 @@ function App() {
     width: "100%",
     height: "120vh",
     padding: "0",
-    backgroundImage: `url(${bgImg})`,
+    background: `linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(${bgImg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   };
 
   return (
-    <div style={homeStyle} className='App'>
+    <div style={homeStyle} className='App bg-black'>
       <Navbar />
       <Home />
       <Products />

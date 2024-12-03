@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faPhone, faShop } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/tathastu-logo.png";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,25 +13,22 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`flex justify-between items-center px-10 py-4 md:px-20 sm:px-5 ${isOpen ? "bg-black" : "bg-transparent"
+            className={`flex sm:h-auto md:h-auto justify-between items-center px-10 py-4 md:px-20 sm:px-5 ${isOpen ? "bg-black" : "bg-transparent"
                 } text-white transition duration-300`}
         >
-            {/* Logo */}
             <div className="flex items-center">
                 <img
                     src={logo}
                     alt="Tathastu Logo"
-                    className="h-10 sm:h-12 md:h-14 object-contain" // Adjust the height
+                    className="h-10 sm:h-12 md:h-14 object-contain"
                 />
             </div>
 
-            {/* Menu and Button */}
             <div className="flex items-center gap-6">
-                <button className="px-5 sm:block hidden py-2 bg-transparent border border-white text-white rounded-full font-bold hover:bg-gray-800 transition">
+                <button className="px-5 sm:block hidden py-1.5 bg-transparent border border-white text-white rounded-full font-bold hover:bg-gray-800 transition">
                     Get in touch <FontAwesomeIcon icon={faArrowRight} />
                 </button>
 
-                {/* Hamburger Icon */}
                 <div
                     className="flex flex-col gap-1 cursor-pointer"
                     onClick={toggleMenu}
@@ -41,47 +39,61 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Dropdown Menu */}
             <ul
                 className={`${isOpen ? "flex" : "hidden"
-                    } flex-col absolute top-16 right-0 w-screen bg-black px-10 py-6 text-white justify-center`}
+                    } flex-col absolute top-16 right-0 w-screen h-auto bg-black px-10 py-6 text-white pb-16`}
             >
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-6 items-center">
-                    {/* Section 1 */}
-                    <div>
-                        <header className="text-gray-400 text-sm mb-2">Tathastu</header>
-                        <hr className="mb-4 border-gray-600" />
-                        <ul className="space-y-2">
-                            <li className="text-xl">About</li>
-                            <li className="text-xl">Blog</li>
-                            <li className="text-xl">Press</li>
-                            <li className="text-xl">Career</li>
+                <div className="flex flex-wrap gap-10 mt-2 justify-evenly items-start">
+                    <div className="w-full md:w-1/4">
+                        <header className="text-white text-sm sm:text-base mb-2">Tathastu</header>
+                        <div className="flex items-center mb-4">
+                            <div className="w-[6px] h-[6px] bg-white rounded-full"></div>
+                            <div className="flex-1 h-[1.5px] bg-gradient-to-r from-white to-white/0 "></div>
+                        </div>
+                        <ul className="space-y-4 sm:space-y-4 md:space-y-6 lg:space-y-8">
+                            <li className="text-2xl sm:text-4xl text-white">About</li>
+                            <li className="text-xl sm:text-3xl text-gray-400/90">Industries Solution</li>
+                            <li className="text-xl sm:text-3xl text-gray-400/90">Professions</li>
+                            <li className="text-xl sm:text-3xl text-gray-400/90">Haredwares</li>
                         </ul>
                     </div>
 
-                    {/* Section 2 */}
-                    <div>
-                        <header className="text-gray-400 text-sm mb-2">Industries</header>
-                        <hr className="mb-4 border-gray-600" />
-                        <ul className="space-y-2">
-                            <li>About</li>
-                            <li>Blog</li>
-                            <li>Press</li>
-                            <li>Career</li>
-                            <li>Contact Us</li>
+                    <div className="w-full md:w-1/4">
+                        <header className="text-white text-sm sm:text-base mb-2">Industries</header>
+                        <div className="flex items-center mb-4">
+                            <div className="w-[6px] h-[6px] bg-white rounded-full"></div>
+                            <div className="flex-1 h-[1.5px] bg-gradient-to-r from-white to-white/0 "></div>
+                        </div>
+                        <ul className="space-y-4">
+                            <li className="text-sm sm:text-base text-gray-400/90">About</li>
+                            <li className="text-sm sm:text-base text-gray-400/90">Blog</li>
+                            <li className="text-sm sm:text-base text-gray-400/90">Press</li>
+                            <li className="text-sm sm:text-base text-gray-400/90">Career</li>
+                            <li className="text-sm sm:text-base text-gray-400/90">Became a Reseller</li>
+                            <li className="text-sm sm:text-base text-gray-400/90">Request a Demo</li>
+                            <li className="text-sm sm:text-base text-gray-400/90">Contact Us</li>
                         </ul>
                     </div>
 
-                    {/* Section 3 */}
-                    <div>
-                        <header className="text-gray-400 text-sm mb-2">Professions</header>
-                        <hr className="mb-4 border-gray-600" />
-                        <ul className="space-y-2">
-                            <li>About</li>
-                            <li>Blog</li>
-                            <li>Press</li>
-                            <li>Career</li>
-                            <li>Contact Us</li>
+                    <div className="w-full md:w-1/4 md:block hidden">
+                        <header className="text-white text-sm sm:text-base mb-2">Professions</header>
+                        <div className="flex items-center mb-4">
+                            <div className="w-[6px] h-[6px] bg-white rounded-full"></div>
+                            <div className="flex-1 h-[1.5px] bg-gradient-to-r from-white to-white/0 "></div>
+                        </div>
+                        <ul className="space-y-8">
+                            <li className="mt-8 flex justify-start items-center">
+                                <FontAwesomeIcon className="text-2xl mt-2 text-gray-300/90" icon={faPhone} />
+                                <a href="#" className="hover:text-white transition py-1 px-3 text-xl sm:text-2xl text-gray-300/80">+91-9820192970</a>
+                            </li>
+                            <li className="mt-8 flex justify-start items-center">
+                                <FontAwesomeIcon className="text-2xl mt-2 text-gray-300/90" icon={faEnvelope} />
+                                <a href="#" className="hover:text-white transition py-1 px-3 text-base sm:text-2xl text-gray-300/80">chetan@tathastu.global</a>
+                            </li>
+                            <li className="mt-8 flex justify-start items-start text-start flex-col space-y-2">
+                                <h5 className="text-xs sm:text-sm text-gray-400/90">BUSINESS HOURS</h5>
+                                <h2 className="text-sm sm:text-base text-gray-400/90">Monday-Friday: 9am to 6pm (IST)</h2>
+                            </li>
                         </ul>
                     </div>
                 </div>
