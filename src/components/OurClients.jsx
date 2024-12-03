@@ -13,11 +13,11 @@ const OurClients = () => {
                 <h1>Our Clients</h1>
             </div>
 
-            <div className="flex flex-wrap md:flex-nowrap flew justify-center items-center w-full gap-12 ">
+            <div className="flex flex-wrap md:flex-nowrap flew justify-center items-center w-full sm:mt-16 lg:mt-8 md:mt-12 gap-12 ">
                 {clientImages.map((clientImg, index) => (
                     <div key={index} className="relative flex items-center">
                         <img
-                            className="filter invert brightness-200 w-44 lg:w-56 md:w-48 sm:w-40 h-32 lg:h-44 md:h-32 sm:h-32 object-contain"
+                            className="filter invert brightness-200 w-32 sm:w-40 md:w-48 lg:w-56 h-auto lg:h-44 md:h-36 sm:h-32 object-contain"
                             src={clientImg}
                             alt={`Client ${index + 1}`}
                         />
