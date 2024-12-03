@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,136 +11,78 @@ const Navbar = () => {
 
     return (
         <nav
-            style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                padding: "10px 5rem",
-                backgroundColor: isOpen ? "black" : "transparent", // Change background on menu toggle
-                color: "#fff",
-                position: "relative",
-                transition: "background-color 0.3s ease", // Smooth transition
-            }}
+            className={`flex justify-between items-center px-10 py-4 md:px-20 sm:px-5  ${isOpen ? "bg-black" : "bg-transparent"
+                } text-white transition duration-300`}
         >
-            <div style={{ fontSize: "24px", fontWeight: "bold" }}>
-                <h2 style={{ margin: 0 }}>Logo</h2>
+
+            <div className="text-2xl font-bold">
+                <h2>Logo</h2>
             </div>
 
-            <div
-                style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "15px",
-                }}
-            >
-                <button
-                    style={{
-                        padding: "10px 18px",
-                        background: "transparent",
-                        border: "1px solid grey",
-                        cursor: "pointer",
-                        fontWeight: "bold",
-                        color: "white",
-                        borderRadius: "2rem",
-                    }}
-                >
+
+            <div className="flex items-center gap-6">
+
+                <button className="px-5 py-2 bg-transparent border border-white text-white rounded-full font-bold hover:bg-gray-800 transition">
                     Get in touch <FontAwesomeIcon icon={faArrowRight} />
                 </button>
 
+
                 <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "5px",
-                        cursor: "pointer",
-                    }}
+                    className="flex flex-col gap-1 cursor-pointer"
                     onClick={toggleMenu}
                 >
-                    <span
-                        style={{
-                            width: "25px",
-                            height: "3px",
-                            backgroundColor: "#fff",
-                        }}
-                    ></span>
-                    <span
-                        style={{
-                            width: "25px",
-                            height: "3px",
-                            backgroundColor: "#fff",
-                        }}
-                    ></span>
-                    <span
-                        style={{
-                            width: "25px",
-                            height: "3px",
-                            backgroundColor: "#fff",
-                        }}
-                    ></span>
+                    <span className="w-6 h-0.5 bg-white"></span>
+                    <span className="w-4 h-0.5 bg-white"></span>
+                    <span className="w-6 h-0.5 bg-white"></span>
                 </div>
             </div>
 
+
             <ul
-                style={{
-                    listStyle: "none",
-                    margin: 0,
-                    width: "99vw",
-                    height: "auto",
-                    padding: "1rem 5.5rem",
-                    display: isOpen ? "flex" : "none",
-                    flexDirection: "column",
-                    position: "absolute",
-                    top: "61px",
-                    right: "0px",
-                    backgroundColor: "black",
-                }}
+                className={`${isOpen ? "flex" : "hidden"
+                    } flex-col absolute top-16 right-0 w-screen bg-black px-10 py-6 text-white justify-center`}
             >
-                <div style={{ height: "auto", width: "80%", background: "black", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: "3rem", color: "white", marginTop: "3rem" }} >
 
-                    <div style={{ textAlign: "start" }} >
-                        <header style={{ fontSize: "12px", color: "gray", paddingBottom: "0.5rem", textAlign: "start" }}>Tathastu</header>
-                        <hr />
-                        <ul style={{ fontSize: "12px", textAlign: "start", paddingTop: "0.5rem" }}>
-                            <li style={{ fontSize: "2rem" }} >About</li>
-                            <li style={{ fontSize: "2rem" }} >Blog</li>
-                            <li style={{ fontSize: "2rem" }} >Press</li>
-                            <li style={{ fontSize: "2rem" }} >Career</li>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-6 items-center">
 
+                    <div>
+                        <header className="text-gray-400 text-sm mb-2">Tathastu</header>
+                        <hr className="mb-4 border-gray-600" />
+                        <ul className="space-y-2">
+                            <li className="text-xl">About</li>
+                            <li className="text-xl">Blog</li>
+                            <li className="text-xl">Press</li>
+                            <li className="text-xl">Career</li>
                         </ul>
                     </div>
-                    <div style={{ textAlign: "start" }} >
-                        <header style={{ fontSize: "12px", color: "gray", paddingBottom: "0.5rem", textAlign: "start" }}>Industries</header>
-                        <hr />
-                        <ul style={{ fontSize: "12px", textAlign: "start", paddingTop: "0.5rem" }}>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >About</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Blog</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Press</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Career</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Contact Us</li>
+
+
+                    <div>
+                        <header className="text-gray-400 text-sm mb-2">Industries</header>
+                        <hr className="mb-4 border-gray-600" />
+                        <ul className="space-y-2">
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Press</li>
+                            <li>Career</li>
+                            <li>Contact Us</li>
                         </ul>
                     </div>
-                    <div style={{ textAlign: "start" }} >
-                        <header style={{ fontSize: "12px", color: "gray", paddingBottom: "0.5rem", textAlign: "start" }}>Professions</header>
-                        <hr />
-                        <ul style={{ fontSize: "12px", textAlign: "start", paddingTop: "0.5rem" }}>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >About</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Blog</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Press</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Career</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Contact Us</li>
+
+
+                    <div>
+                        <header className="text-gray-400 text-sm mb-2">Professions</header>
+                        <hr className="mb-4 border-gray-600" />
+                        <ul className="space-y-2">
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Press</li>
+                            <li>Career</li>
+                            <li>Contact Us</li>
                         </ul>
                     </div>
-                    <div style={{ textAlign: "start" }} >
-                        <header style={{ fontSize: "12px", color: "gray", paddingBottom: "0.5rem", textAlign: "start" }}>Contact</header>
-                        <hr />
-                        <ul style={{ fontSize: "12px", textAlign: "start", paddingTop: "0.5rem" }}>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >About</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Blog</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Press</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Career</li>
-                            <li style={{ fontSize: "12px", padding: "0.5rem" }} >Contact Us</li>
-                        </ul>
-                    </div>
+
+
                 </div>
             </ul>
         </nav>

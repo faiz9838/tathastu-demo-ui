@@ -16,7 +16,7 @@ import Footer from './components/Footer'
 function App() {
   const homeStyle = {
     width: "100%",
-    height: "100vh",
+    height: "120vh",
     padding: "0",
     backgroundImage: `url(${bgImg})`,
     backgroundSize: "cover",

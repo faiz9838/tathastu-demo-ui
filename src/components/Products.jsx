@@ -1,125 +1,62 @@
-import React from 'react';
-import ProductsTab from './ProductsTab';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCogs, faPuzzlePiece, faShapes, faDesktop, faTools } from "@fortawesome/free-solid-svg-icons"; // Import desired icons
+import ProductsTab from "./ProductsTab";
 
 const Products = () => {
     return (
-        <div
-            className="products"
-            style={{
-                marginTop: "-62px",
-                backgroundColor: "black",
-                height: "auto"
-            }}
-        >
-            <div className="product-header-wrapper" style={{ textAlign: "center", paddingTop: "6rem", fontSize: "1.5rem" }}>
-                <h1 style={{ lineHeight: "4rem" }}>Variety Of Products</h1>
-                <h1 tyle={{ lineHeight: "3rem" }}>We Offer</h1>
+        <div className="products bg-black mt-[-75px]">
+
+            <div className="product-header-wrapper text-center pt-24 text-white">
+                <h1 className="text-3xl md:text-3xl lg:text-4xl leading-10">Variety Of Products</h1>
+                <h1 className="text-3xl md:text-3xl lg:text-4xl leading-10">We Offer</h1>
             </div>
-            <div className='mini-div-wrapper' style={{ display: "flex", flexWrap: "wrap", gap: "2rem", justifyContent: "center", marginTop: "4rem" }}>
-                <div
-                    className="box"
-                    style={{
-                        padding: "1rem",
-                        backgroundColor: "#141518",
-                        color: "white",
-                        textAlign: "start",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                        borderRadius: "1.5rem",
-                        width: "150px",
-                        height: "150px",
-                        fontSize: "1.3rem",
-                        fontWeight: "",
-                        border: "1px solid rgba(0, 0, 0, 0.1)"
-                    }}
-                >
+
+
+            <div className="mini-div-wrapper flex flex-wrap gap-8 justify-center mt-16">
+
+                <div className="box relative p-4 bg-[#141518]/50 text-white text-left backdrop-blur-md border border-[rgba(255,255,255,0.18)] rounded-[1.5rem] w-[150px] h-[150px] text-lg font-medium">
                     Hardware
+                    <FontAwesomeIcon
+                        icon={faTools}
+                        className="absolute bottom-6 right-6 text-4xl text-gray-400"
+                    />
                 </div>
-                <div
-                    className="box"
-                    style={{
-                        padding: "1rem",
-                        backgroundColor: "#141518",
-                        color: "white",
-                        textAlign: "start",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                        borderRadius: "6rem",
-                        width: "150px",
-                        fontSize: "1.3rem",
-                        fontWeight: "",
-                        height: "150px",
-                    }}
-                >
+                {/* Box 2 */}
+                <div className="box relative p-4 bg-[#141518]/50 text-white text-left backdrop-blur-md border border-[rgba(255,255,255,0.18)] rounded-[6rem] w-[150px] h-[150px] text-lg font-medium">
 
                 </div>
-                <div
-                    className="box"
-                    style={{
-                        padding: "1rem",
-                        backgroundColor: "#141518",
-                        color: "white",
-                        textAlign: "start",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                        borderRadius: "1.5rem",
-                        width: "150px",
-                        height: "150px",
-                        fontSize: "1.3rem",
-                        fontWeight: "",
-                    }}
-                >
+                {/* Box 3 */}
+                <div className="box relative p-4 bg-[#141518]/50 text-white text-left backdrop-blur-md border border-[rgba(255,255,255,0.18)] rounded-[1.5rem] w-[150px] h-[150px] text-lg font-medium">
                     Plugins
+                    <FontAwesomeIcon
+                        icon={faPuzzlePiece}
+                        className="absolute bottom-6 right-6 text-4xl text-gray-400"
+                    />
                 </div>
-                <div
-                    className="box"
-                    style={{
-                        padding: "1rem",
-                        backgroundColor: "#141518",
-                        color: "white",
-                        textAlign: "start",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                        borderRadius: "1.5rem",
-                        width: "150px",
-                        height: "150px",
-                        fontSize: "1.3rem",
-                        fontWeight: "",
-                    }}
-                >
+                {/* Box 4 */}
+                <div className="box relative p-4 bg-[#141518]/50 text-white text-left backdrop-blur-md border border-[rgba(255,255,255,0.18)] rounded-[1.5rem] w-[150px] h-[150px] text-lg font-medium">
                     2D/3D
+                    <FontAwesomeIcon
+                        icon={faShapes}
+                        className="absolute bottom-6 right-6 text-4xl text-gray-400"
+                    />
                 </div>
-                <div
-                    className="box"
-                    style={{
-                        padding: "1rem",
-                        backgroundColor: "#141518",
-                        color: "white",
-                        textAlign: "start",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                        borderRadius: "10rem 0rem 0rem",
-                        width: "150px",
-                        height: "150px",
-                        fontSize: "1.3rem",
-                        fontWeight: "",
-                    }}
-                >
+                {/* Box 5 */}
+                <div className="box relative p-4 bg-[#141518]/50 text-white text-left backdrop-blur-md border border-[rgba(255,255,255,0.18)] rounded-[10rem_0rem_0rem] w-[150px] h-[150px] text-lg font-medium">
 
                 </div>
-                <div
-                    className="box"
-                    style={{
-                        padding: "1rem",
-                        backgroundColor: "#141518",
-                        color: "white",
-                        textAlign: "start",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                        borderRadius: "1.5rem",
-                        width: "150px",
-                        height: "150px",
-                        fontSize: "1.3rem",
-                        fontWeight: "",
-                    }}
-                >
+                {/* Box 6 */}
+                <div className="box relative p-4 bg-[#141518]/50 text-white text-left backdrop-blur-md border border-[rgba(255,255,255,0.18)] rounded-[1.5rem] w-[150px] h-[150px] text-lg font-medium">
                     Applications
+                    <FontAwesomeIcon
+                        icon={faDesktop}
+                        className="absolute bottom-6 right-6 text-4xl text-gray-400"
+                    />
                 </div>
             </div>
+
+            {/* Products Tab */}
             <ProductsTab />
         </div>
     );

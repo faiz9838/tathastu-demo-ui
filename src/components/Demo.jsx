@@ -1,27 +1,45 @@
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import backgroundImage from '../assets/—Pngtree—diamond.png';
 
 const Demo = () => {
     return (
-        <div style={{ height: "auto", width: "100%", background: "black", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingBottom: "3rem" }}>
-            <div style={{ width: "85%", height: "auto", color: "white", background: "#141518", padding: "2rem", marginTop: "4rem", borderRadius: "1rem", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                <div style={{
-                    display: "flex", flexDirection:
-                        "column", justifyContent: "center", alignItems: "center", width: "50%", textAlign: "center"
-                }}>
-                    <h1 style={{ paddingTop: "2rem", fontSize: "2.2rem", lineHeight: "2.5rem", fontWeight: "lighter" }}>Design support for all your <br />
-                        creative needs</h1>
-                    <p style={{ padding: "1rem", lineHeight: "1.5rem", color: "gray" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia illo illum architecto provident, alias consectetur dolor nesciunt.
+        <div className="flex flex-col justify-center items-center bg-black pb-12 overflow-hidden relative w-full">
+            {/* Background Images */}
+            <div
+                className="absolute top-52 z-10 left-[60rem] right-44 bottom-44 bg-cover bg-no-repeat sm:w-44 md:w-32 w-32 h-44 bg-center opacity-30"
+                style={{ backgroundImage: `url(${backgroundImage})` }}
+            ></div>
+            <div
+                className="absolute top-24 z-10 left-16 right-0 bottom-0 bg-cover bg-no-repeat sm:w-36 md:w-52 h-44 w-36 bg-center opacity-30"
+                style={{ backgroundImage: `url(${backgroundImage})` }}
+            ></div>
+
+            <div className="relative w-[85%]  bg-[#141518] text-white py-8 px-6 mt-16 rounded-xl flex flex-col justify-center items-center">
+                {/* Content goes here */}
+
+
+                <div className="flex flex-col items-center w-full text-center">
+                    <h1 className="pt-8 text-2xl lg:text-3xl xl:text-4xl font-light leading-relaxed">
+                        Design support for all your <br /> creative needs
+                    </h1>
+                    <p className="py-4 text-base lg:text-lg text-gray-400 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia illo illum architecto provident, alias consectetur dolor nesciunt.
                     </p>
                 </div>
-                <div style={{ display: "flex", gap: "1.5rem", marginTop: "1.5rem" }}>
-                    <button style={{ padding: "0.7rem 1.2rem", background: "orange", borderRadius: "1rem", border: "none", cursor: "pointer" }}>Get in touch <FontAwesomeIcon icon={faArrowRight} /></button>
-                    <button style={{ padding: "0.7rem 1.2rem", borderRadius: "1rem", border: "none", cursor: "pointer" }}>Request a demo <FontAwesomeIcon icon={faArrowRight} /></button>
+
+                <div className="flex gap-6 mt-6 flex-wrap justify-center">
+                    <button className="px-6 py-3 bg-orange-500 text-white rounded-xl flex items-center gap-2">
+                        Get in touch <FontAwesomeIcon icon={faArrowRight} />
+                    </button>
+                    <button className="px-6 py-3 border border-white text-white rounded-xl flex items-center gap-2">
+                        Request a demo <FontAwesomeIcon icon={faArrowRight} />
+                    </button>
                 </div>
             </div>
         </div >
-    )
+    );
 }
 
-export default Demo
+export default Demo;
