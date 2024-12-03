@@ -19,7 +19,7 @@ const Demo = () => {
 
                 <div className="flex flex-col w-full sm:w-[75%] md:w-[60%] lg:w-[50%] lg:text-center text-start lg:justify-center md:justify-center sm:text-left">
                     <h1 className="text-3xl sm:text-3xl lg:text-4xl font-semibold leading-snug sm:leading-normal">
-                        Design support for all <br /> your creative needs
+                        Design support for <br/> all  your creative needs
                     </h1>
                     <p className="mt-4 text-sm sm:text-base lg:text-lg text-gray-300 leading-relaxed">
                         Get a free introduction and discover how you and your team can change the way you source design forever.
