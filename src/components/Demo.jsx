@@ -18,7 +18,7 @@ const Demo = () => {
             <div className="relative w-[85%] bg-[#141518] text-white p-14 px-6 mt-16 rounded-3xl flex flex-col justify-center items-center overflow-hidden">
                 <div className="flex flex-col items-center justify-center w-full sm:w-[75%] md:w-[60%] lg:w-[50%] text-center">
                     <h1 className="pt-0 text-3xl lg:text-3xl xl:text-4xl font-normal leading-relaxed">
-                        Design support for all your <br /> creative needs
+                        Design support for all your creative needs
                     </h1>
                     <p className="py-4 font-normal p-6 text-base lg:text-sm md:text-xs text-gray-300 leading-relaxed">
                         Get a free introduction and discover how you and your team can change the way your source design forever
