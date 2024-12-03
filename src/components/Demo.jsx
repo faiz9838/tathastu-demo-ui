@@ -15,17 +15,17 @@ const Demo = () => {
                 style={{ backgroundImage: `url(${backgroundImage})` }}
             ></div>
 
-            <div className="relative w-[85%] bg-[#141518] text-white p-14 px-6 mt-16 rounded-3xl flex flex-col justify-center items-center overflow-hidden">
-                <div className="flex flex-col items-center justify-center w-full sm:w-[75%] md:w-[60%] lg:w-[50%] text-center">
-                    <h1 className="pt-0 text-3xl lg:text-3xl xl:text-4xl font-normal leading-relaxed">
-                        Design support for all your creative needs
+            <div className="relative w-[85%] bg-[#141518] text-white p-10 px-6 mt-16 rounded-3xl flex flex-col justify-center items-start overflow-hidden">
+                <div className="flex flex-col items-center p-2 justify-center w-full sm:w-[75%] md:w-[60%] lg:w-[50%] text-center">
+                    <h1 className="pt-0 text-3xl text-start f lg:text-3xl xl:text-4xl font-semibold leading-10">
+                        Design support for all <br /> your  creative needs
                     </h1>
-                    <p className="py-4 font-normal p-6 text-base lg:text-sm md:text-xs text-gray-300 leading-relaxed">
+                    <p className="py-4 text-start font-normal  text-base lg:text-sm md:text-base sm:text-base text-gray-300 leading-8">
                         Get a free introduction and discover how you and your team can change the way your source design forever
                     </p>
                 </div>
 
-                <div className="flex gap-6 mt-6 mb-4 flex-wrap justify-center">
+                <div className="flex gap-6 mt-4 mb-4 flex-wrap justify-start">
                     <button className="px-5 py-2 bg-orange-500 text-black font-medium rounded-full flex items-center gap-2">
                         Get in touch <FontAwesomeIcon icon={faArrowRight} />
                     </button>
