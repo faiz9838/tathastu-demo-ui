@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import logo from "../assets/tathastu-logo.png";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,22 +12,25 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`flex justify-between items-center px-10 py-4 md:px-20 sm:px-5  ${isOpen ? "bg-black" : "bg-transparent"
+            className={`flex justify-between items-center px-10 py-4 md:px-20 sm:px-5 ${isOpen ? "bg-black" : "bg-transparent"
                 } text-white transition duration-300`}
         >
-
-            <div className="text-2xl font-bold">
-                <h2>Logo</h2>
+            {/* Logo */}
+            <div className="flex items-center">
+                <img
+                    src={logo}
+                    alt="Tathastu Logo"
+                    className="h-10 sm:h-12 md:h-14 object-contain" // Adjust the height
+                />
             </div>
 
-
+            {/* Menu and Button */}
             <div className="flex items-center gap-6">
-
                 <button className="px-5 sm:block hidden py-2 bg-transparent border border-white text-white rounded-full font-bold hover:bg-gray-800 transition">
                     Get in touch <FontAwesomeIcon icon={faArrowRight} />
                 </button>
 
-
+                {/* Hamburger Icon */}
                 <div
                     className="flex flex-col gap-1 cursor-pointer"
                     onClick={toggleMenu}
@@ -37,14 +41,13 @@ const Navbar = () => {
                 </div>
             </div>
 
-
+            {/* Dropdown Menu */}
             <ul
                 className={`${isOpen ? "flex" : "hidden"
                     } flex-col absolute top-16 right-0 w-screen bg-black px-10 py-6 text-white justify-center`}
             >
-
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-6 items-center">
-
+                    {/* Section 1 */}
                     <div>
                         <header className="text-gray-400 text-sm mb-2">Tathastu</header>
                         <hr className="mb-4 border-gray-600" />
@@ -56,7 +59,7 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-
+                    {/* Section 2 */}
                     <div>
                         <header className="text-gray-400 text-sm mb-2">Industries</header>
                         <hr className="mb-4 border-gray-600" />
@@ -69,7 +72,7 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-
+                    {/* Section 3 */}
                     <div>
                         <header className="text-gray-400 text-sm mb-2">Professions</header>
                         <hr className="mb-4 border-gray-600" />
@@ -81,8 +84,6 @@ const Navbar = () => {
                             <li>Contact Us</li>
                         </ul>
                     </div>
-
-
                 </div>
             </ul>
         </nav>
