@@ -26,9 +26,7 @@ const ProductsTab = () => {
                         <hr className="border-gray-100 mb-3 mt-32 h-[1.5px] my-2 bg-gray-200 border-0 rounded dark:bg-gray-400" />
                         <h2 className="text-xl lg:text-2xl font-medium">Media & Entertainment</h2>
                         <p className="mt-1 text-xs lg:text-sm font-thin text-gray-300 leading-relaxed">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi impedit praesentium
-                            nihil dolorum sed quidem quas odio rerum! Impedit, nesciunt ipsa labore delectus
-                            dolorem voluptates atque cumque quae aut nemo!
+                            We provides a powerful collection of specialized tools designed for architects, designers, and AEC experts, From conceptual massing to lifelike renders, animations, and real-time immersive experiences, you can create and visualize your designs at any stage with ease.
                         </p>
                         <button className="mt-6 p-2 px-6 bg-orange-500 font-medium text-black rounded-full hover:bg-orange-600">
                             Explore Products <FontAwesomeIcon icon={faArrowRight} />

@@ -107,7 +107,7 @@ const Footer = () => {
 
             <hr className="border-t border-gray-600 mt-12" />
 
-            <div className="container mx-auto px-6 md:px-24 lg:px-20 flex justify-between items-center mt-4">
+            <div className="container mx-auto px-6 md:px-24 lg:px-20 flex justify-between items-center mt-6">
                 <p className="text-xs text-gray-400">Copyright © Faiz Ahmad 2024</p>
                 <div className="flex gap-6">
                     <a href="#" className="hover:text-gray-400 transition">

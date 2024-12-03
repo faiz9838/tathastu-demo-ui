@@ -8,8 +8,8 @@ const clientImages = [client1, client2, client3, client4];
 
 const OurClients = () => {
     return (
-        <div className="flex flex-col justify-center items-center gap-6 w-full -mt-2 bg-black py-6 p-4">
-            <div className="text-white text-3xl lg:text-4xl font-normal">
+        <div className="flex flex-col justify-center items-center gap-6 w-full -mt-2 bg-black py-0 p-4">
+            <div className="text-white mt-3 text-3xl lg:text-5xl font-normal">
                 <h1>Our Clients</h1>
             </div>
 
@@ -22,9 +22,9 @@ const OurClients = () => {
                             alt={`Client ${index + 1}`}
                         />
 
-                        {index !== 3 && (
+                        {/* {index !== 3 && (
                             <div className="absolute right-[-1.8rem] w-[0.7px] h-[70px] bg-gray-300/40 hidden md:block"></div>
-                        )}
+                        )} */}
                     </div>
                 ))}
             </div>

@@ -25,7 +25,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center gap-6">
-                <button className="px-5 sm:block hidden py-1.5 bg-transparent border border-white text-white rounded-full font-bold hover:bg-gray-800 transition">
+                <button className="px-5 sm:block hidden py-1.5 bg-transparent border border-white text-white rounded-full font-semibold hover:bg-gray-800 transition">
                     Get in touch <FontAwesomeIcon icon={faArrowRight} />
                 </button>
 
