@@ -12,7 +12,7 @@ const Footer = () => {
                     <img src={logo} alt="Logo" className="w-44 h-auto sm:block hidden lg:block md:block" />
                 </a>
             </div> */}
-            <div className="container mx-auto px-8 md:px-24 flex flex-wrap md:flex-nowrap justify-between items-start gap-4 lg:gap-12">
+            <div className="container mx-auto px-8 md:px-24 flex flex-wrap md:flex-nowrap justify-between items-start gap-4 lg:gap-12 p-4">
 
                 <div className="text-start flex-1 min-w-[150px]">
                     <h2 className="text-xs text-gray-300 font-semibold uppercase pb-4">Tathastu</h2>
