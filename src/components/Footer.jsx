@@ -6,15 +6,15 @@ import { faAddressCard, faContactBook, faEnvelope, faPhone, faVoicemail } from '
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-6">
+        <footer className="bg-black text-white py-6 flex flex-col ">
+            {/* <div className="flex-shrink-0 absolute w-96 px-20 mb-40 h-auto sm:block hidden">
+                <a href="#">
+                    <img src={logo} alt="Logo" className="w-44 h-auto sm:block hidden lg:block md:block" />
+                </a>
+            </div> */}
             <div className="container mx-auto px-8 md:px-24 flex flex-wrap md:flex-nowrap justify-between items-start gap-4 lg:gap-12">
-                <div className="flex-shrink-0 absolute w-44 h-auto sm:block hidden">
-                    <a href="#">
-                        <img src={logo} alt="Logo" className="w-44 h-auto sm:block hidden" />
-                    </a>
-                </div>
 
-                <div className="text-start flex-1 min-w-[170px]">
+                <div className="text-start flex-1 min-w-[150px]">
                     <h2 className="text-xs text-gray-300 font-semibold uppercase pb-4">Tathastu</h2>
                     <hr className="border-t border-gray-600" />
                     <ul className="text-gray-400 text-xs pt-4 space-y-3 ">
@@ -36,7 +36,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="text-start flex-1 min-w-[170px]">
+                <div className="text-start flex-1 min-w-[150px]">
                     <h2 className="text-xs text-gray-300 font-semibold uppercase pb-4">Industries</h2>
                     <hr className="border-t border-gray-600" />
                     <ul className="text-gray-400 text-xs pt-4 space-y-3">
@@ -58,7 +58,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="text-start flex-1 min-w-[170px]">
+                <div className="text-start flex-1 min-w-[150px]">
                     <h2 className="text-xs text-gray-300 font-semibold uppercase pb-4">Professions</h2>
                     <hr className="border-t border-gray-600" />
                     <ul className="text-gray-400 text-xs pt-4 space-y-3">
@@ -83,7 +83,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="text-start flex-1 min-w-[170px]">
+                <div className="text-start flex-1 min-w-[150px]">
                     <h2 className="text-xs text-gray-300 font-semibold uppercase pb-4">Contact</h2>
                     <hr className="border-t border-gray-600" />
                     <ul className="text-gray-400 text-sm pt-4 space-y-3">

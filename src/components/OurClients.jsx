@@ -8,7 +8,7 @@ const clientImages = [client1, client2, client3, client4];
 
 const OurClients = () => {
     return (
-        <div className="flex flex-col justify-center items-center gap-6 w-full -mt-2 bg-black py-6">
+        <div className="flex flex-col justify-center items-center gap-6 w-full -mt-2 bg-black py-6 p-4">
             <div className="text-white text-3xl lg:text-4xl font-normal">
                 <h1>Our Clients</h1>
             </div>
