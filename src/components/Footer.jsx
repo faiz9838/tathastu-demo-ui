@@ -91,7 +91,7 @@ const Footer = () => {
                             <FontAwesomeIcon className='text-2xl p-3' icon={faEnvelope} />
                             <div className='flex flex-col'>
                                 <h3 className='font-light'>Email ID</h3>
-                                <a href="#" className="hover:text-white  transition py-1">chetan@tathastu.global</a>
+                                <a href="#" className="hover:text-white text-sm  transition py-1">chetan@tathastu.global</a>
                             </div>
                         </li>
                         <li className='flex flex-row justify-start items-center'>
