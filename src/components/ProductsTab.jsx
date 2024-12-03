@@ -20,7 +20,7 @@ const ProductsTab = () => {
 
                 <div className="w-full lg:w-1/2 flex flex-col items-start justify-between text-left">
                     <div>
-                        <h1 className="text-4xl  text-wrap lg:text-3xl font-semibold mb-6 leading-10">
+                        <h1 className="text-4xl sm:2xl  text-wrap lg:text-3xl font-semibold mb-6 leading-10">
                             Cutting-edge solutions for Industries
                         </h1>
                         <hr className="border-gray-100 mb-3 mt-32 h-[1.5px] my-2 bg-gray-200 border-0 rounded dark:bg-gray-400" />
