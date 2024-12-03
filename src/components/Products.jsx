@@ -5,7 +5,7 @@ import ProductsTab from "./ProductsTab";
 
 const Products = () => {
     return (
-        <div className="products bg-black mt-[-75px]">
+        <div className="products bg-black mt-[-80px]">
 
             <div className="product-header-wrapper text-center pt-24 text-white">
                 <h1 className="text-3xl md:text-3xl lg:text-4xl leading-10">Variety Of Products</h1>

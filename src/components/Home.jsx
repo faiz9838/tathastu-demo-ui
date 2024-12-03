@@ -4,10 +4,10 @@ import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export const Home = () => {
     return (
-        <div className="home flex flex-col  justify-center items-start w-full h-[120vh] mt-[1px] px-10 box-border bg-transparent md:px-20 sm:px-5 font-poppins">
+        <div className="home flex flex-col  justify-center items-start w-full h-[120vh] mt-[2px] px-10 box-border bg-transparent md:px-20 sm:px-5 font-poppins">
 
             <div className="content-wrapper w-full max-w-md text-white text-base">
-                <h3 className="leading-10 text-4xl font-semibold sm:text-4xl ">
+                <h3 className="leading-10 text-4xl font-semibold sm:text-4xl mt-4 ">
                     Empowering Creativity with Leading Software & Hardware Solutions
                 </h3>
                 <p className="text-gray-400 text-base mt-8">
