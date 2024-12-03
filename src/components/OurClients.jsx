@@ -17,7 +17,7 @@ const OurClients = () => {
                 {clientImages.map((clientImg, index) => (
                     <div key={index} className="relative flex items-center">
                         <img
-                            className="filter invert brightness-200 w-44 h-32 lg:h-44 md:h-32 sm:h-24 object-contain"
+                            className="filter invert brightness-200 w-44 lg:w-56 md:w-48 sm:w-40 h-32 lg:h-44 md:h-32 sm:h-32 object-contain"
                             src={clientImg}
                             alt={`Client ${index + 1}`}
                         />
