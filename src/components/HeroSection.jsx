@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-export const Home = () => {
+export const HeroSection = () => {
     return (
         <div className="home flex flex-col justify-center items-start w-full h-[100vh] mt-[2px] px-10 box-border bg-transparent md:px-20 sm:px-5 font-poppins mb-28">
             <div className="content-wrapper w-full max-w-md text-white text-base mt-48">

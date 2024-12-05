@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faPhone, faShop } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/tathastu-logo.png";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -17,11 +17,14 @@ const Navbar = () => {
                 } text-white transition duration-300`}
         >
             <div className="flex items-center">
-                <img
-                    src={logo}
-                    alt="Tathastu Logo"
-                    className="h-10 sm:h-12 md:h-14 object-contain"
-                />
+                <Link to="/">
+                    <img
+                        src={logo}
+                        alt="Tathastu Logo"
+                        className="h-10 sm:h-12 md:h-14 object-contain"
+                    />
+                </Link>
+
             </div>
 
             <div className="flex items-center gap-6">
@@ -65,13 +68,27 @@ const Navbar = () => {
                             <div className="flex-1 h-[1.5px] bg-gradient-to-r from-white to-white/0 "></div>
                         </div>
                         <ul className="space-y-4">
-                            <li className="text-sm sm:text-base text-gray-400/90">About</li>
-                            <li className="text-sm sm:text-base text-gray-400/90">Blog</li>
-                            <li className="text-sm sm:text-base text-gray-400/90">Press</li>
-                            <li className="text-sm sm:text-base text-gray-400/90">Career</li>
-                            <li className="text-sm sm:text-base text-gray-400/90">Became a Reseller</li>
-                            <li className="text-sm sm:text-base text-gray-400/90">Request a Demo</li>
-                            <li className="text-sm sm:text-base text-gray-400/90">Contact Us</li>
+                            <li className="text-sm sm:text-base text-gray-400/90">
+                                <Link to="/about" className="hover:text-white transition-colors duration-200">About</Link>
+                            </li>
+                            <li className="text-sm sm:text-base text-gray-400/90">
+                                <Link to="/blog" className="hover:text-white transition-colors duration-200">Blog</Link>
+                            </li>
+                            <li className="text-sm sm:text-base text-gray-400/90">
+                                <Link to="/press" className="hover:text-white transition-colors duration-200">Press</Link>
+                            </li>
+                            <li className="text-sm sm:text-base text-gray-400/90">
+                                <Link to="/career" className="hover:text-white transition-colors duration-200">Career</Link>
+                            </li>
+                            <li className="text-sm sm:text-base text-gray-400/90">
+                                <Link to="/reseller" className="hover:text-white transition-colors duration-200">Became a Reseller</Link>
+                            </li>
+                            <li className="text-sm sm:text-base text-gray-400/90">
+                                <Link to="/demo" className="hover:text-white transition-colors duration-200">Request a Demo</Link>
+                            </li>
+                            <li className="text-sm sm:text-base text-gray-400/90">
+                                <Link to="/contact" className="hover:text-white transition-colors duration-200">Contact Us</Link>
+                            </li>
                         </ul>
                     </div>
 

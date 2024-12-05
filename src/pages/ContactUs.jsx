@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import DemoCard from '../components/DemoCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPuzzlePiece, faShapes, faDesktop, faTools, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { HeroSection } from '../components/HeroSection';
+
 import AuthPage from './AuthPage';
 import ContactFrom from '../components/Auth/ContactFrom';
 
