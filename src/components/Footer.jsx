@@ -6,7 +6,7 @@ import { faAddressCard, faContactBook, faEnvelope, faPhone, faVoicemail } from '
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-6 flex flex-col ">
+        <footer className="bg-[#0D0E10] text-white py-6 flex flex-col ">
             {/* <div className="flex-shrink-0 absolute w-96 px-20 mb-40 h-auto sm:block hidden">
                 <a href="#">
                     <img src={logo} alt="Logo" className="w-44 h-auto sm:block hidden lg:block md:block" />
